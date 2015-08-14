@@ -1,4 +1,4 @@
-# http_static_server
+# http static server
 Simple HTTP static server in Rust
 
 This is more an experiment made to learn Rust than a real HTTP static server, however I'll try to improve it over time.
