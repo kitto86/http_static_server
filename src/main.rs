@@ -7,7 +7,7 @@ use std::str::FromStr;
 use std::fs::{self, File};
 use std::path::{self};
 use std::vec::Vec;
-  
+    
 struct Config {
 	port_number: u16,
 	working_dir: path::PathBuf,
@@ -42,7 +42,7 @@ fn init_config() -> Config {
 	
 	{
 		let mut ap = ArgumentParser::new();
-		ap.set_description("simple server for static content");
+		ap.set_description("simple HTTP static server");
 		
 		ap.refer(&mut port_number)
 	            .add_option(&["-p", "--port"], Store,
